@@ -312,7 +312,8 @@ int Server::broadcast(struct evhttp_request *req){
 	}
 
 	struct evbuffer *buf = evhttp_request_get_output_buffer(req);
-	evbuffer_add_printf(buf, "ok\n");
+	// evbuffer_add_printf(buf, "ok\n");
+	evbuffer_add_printf(buf, "{\"type\":\"ok\"}");
 	evhttp_send_reply(req, 200, "OK", buf);
 
 	return 0;
