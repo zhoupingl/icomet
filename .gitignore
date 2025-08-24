@@ -49,5 +49,6 @@ deps/libevent-2.0.21-stable/sample/signal-test
 deps/libevent-2.0.21-stable/sample/time-test
 deps/libevent-2.0.21-stable/stamp-h1
 deps/libevent-2.0.21-stable/autom4te.cache
+.idea/
 
 
